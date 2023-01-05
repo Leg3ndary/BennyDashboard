@@ -9276,7 +9276,7 @@ textarea.is-invalid.tt-hint {
             margin-bottom: 0; } }
 
 .btn, .fc button, .ajax-upload-dragdrop .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-cancel, .wizard > .actions a {
-    display: flex;
+    display: inline-block;
     align-items: center;
     font-weight: 400;
     color: #ffffff;
