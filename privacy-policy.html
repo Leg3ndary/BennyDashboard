@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Benny Bot</title>
+        <!-- plugins:css -->
+        <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+        <!-- endinject -->
+        <!-- Plugin css for this page -->
+        <link rel="stylesheet" href="assets/vendors/jvectormap/jquery-jvectormap.css">
+        <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+        <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.theme.default.min.css">
+        <!-- End plugin css for this page -->
+        <!-- inject:css -->
+        <!-- endinject -->
+        <!-- Layout styles -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- End layout styles -->
+        <link rel="shortcut icon" href="assets/images/shinomiya.ico" />
+        <meta property="og:title" content="Benny Bot" />
+        <meta property="og:type" content="Site Content" />
+        <meta property="og:url" content="https://bennybot.me/" />
+        <meta property="og:site_name" content="Invite Me!">
+        <meta property="og:image" content="https://i.imgur.com/Q7leq57.jpg" />
+        <meta property="og:description" content="The useful bot that you actually need." />
+        <meta name="theme-color" content="#ae1b23">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    </head>
+    <body>
+        <div class="container-scroller">
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+                    <a class="sidebar-brand brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="logo" /></a>
+                    <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item nav-category">
+                        <span class="nav-link">Navigation</span>
+                    </li>
+                    <li class="nav-item menu-items">
+                        <a class="nav-link" href="index.html">
+                            <span class="menu-icon">
+                                <i class="mdi mdi-home"></i>
+                            </span>
+                            <span class="menu-title">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item menu-items">
+                        <a class="nav-link" href="status.html">
+                            <span class="menu-icon">
+                                <i class="mdi mdi-speedometer"></i>
+                            </span>
+                            <span class="menu-title">Status</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- partial -->
+            <div class="container-fluid page-body-wrapper">
+                <!-- partial:partials/_navbar.html -->
+                <nav class="navbar p-0 fixed-top d-flex flex-row">
+                    <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+                        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+                    </div>
+                    <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+                        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                            <span class="mdi mdi-menu"></span>
+                        </button>
+                        <ul class="navbar-nav w-100">
+                            <li class="nav-item w-100">
+                                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                                    <input type="text" class="form-control" placeholder="Not Finished">
+                                </form>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav navbar-nav-right">
+                            <li class="nav-item dropdown d-none d-lg-block">
+                                <a class="nav-link btn btn-lg btn-success btn-rounded create-new-button" id="createbuttonDropdown" target="_BLANK" aria-expanded="false" href="https://discord.com/api/oauth2/authorize?client_id=889672871620780082&permissions=1636352650487&scope=applications.commands%20bot">
+                                    <i class="mdi mdi-account-plus"></i>
+                                    Invite 
+                                </a>
+                            <li class="nav-item dropdown">
+                                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                                    <h6 class="p-3 mb-0">Profile</h6>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item preview-item">
+                                        <div class="preview-thumbnail">
+                                            <div class="preview-icon bg-dark rounded-circle">
+                                                <i class="mdi mdi-settings text-success"></i>
+                                            </div>
+                                        </div>
+                                        <div class="preview-item-content">
+                                            <p class="preview-subject mb-1">Settings</p>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item preview-item">
+                                        <div class="preview-thumbnail">
+                                            <div class="preview-icon bg-dark rounded-circle">
+                                                <i class="mdi mdi-logout text-danger"></i>
+                                            </div>
+                                        </div>
+                                        <div class="preview-item-content">
+                                            <p class="preview-subject mb-1">Log out</p>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <p class="p-3 mb-0 text-center">Advanced settings</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                            <span class="mdi mdi-format-line-spacing"></span>
+                        </button>
+                    </div>
+                </nav>
+                <!-- partial -->
+                <div class="main-panel">
+                    <div class="content-wrapper">
+                        <div class="row">
+                            <div class="col-12 grid-margin stretch-card">
+                                <div class="card corona-gradient-card">
+                                    <div class="card-body py-0 px-0 px-sm-3">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 col-sm-3 col-xl-2">
+                                                <img src="assets/images/dashboard/Group126@2x.png" class="gradient-corona-img img-fluid" alt="">
+                                            </div>
+                                            <div class="col-5 col-sm-7 col-xl-8 p-0">
+                                                <h4 class="mb-1 mb-sm-0">Need help with the Bot?</h4>
+                                                <p class="mb-0 font-weight-normal d-none d-sm-block">Join our discord server!</p>
+                                            </div>
+                                            <div class="col-3 col-sm-2 col-xl-2 pl-0 text-center">
+                                                <span>
+                                                    <a href="https://discord.gg/V55WS7Vsfx" target="_blank" class="btn btn-outline-light btn-rounded get-started-btn">Join Now</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-md-12 col-xl-12 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Bennybot Privacy Policy</h4>
+                                        <h4>Last Updated January 5th, 2022</h4> 
+                                        <p>This is not a legal document, and is not intended to be one. This is a document which outlines the privacy policy of the Benny Bot discord bot and what it does with user data.</p>
+                                        <p>This "bot" refers to Benny Bot, or the actual Discord Bot.</p>
+                                        <p>User data refers to any data that is stored by the bot that could reasonably identify a user. This includes, but is not limited to, discord usernames, discord nicknames, and discord profile pictures. This does not include information such as any kind of discord ID's as they provide nearly no information without discord's api, which is secure and anonymizes user data upon account deletion.</p>
+                                        <ol>
+                                            <li>This bot will not store any user data that is not neccessary for it to function.</li>
+                                            <li>Any data it does store will be kept only for as long as it is needed and will be deleted immediately upon request.</li>
+                                            <li>User data which the bot stores or otherwise accesses will not be shared with other parties except to the minimum extent required for bot functionality. (eg. A leaderboard command will require the bot to access the data of all users who have used the command). Users will always have some sort of option to opt out of this functionality.</li>
+                                            <li>The data the bot stores will be held responsibly and protected from unauthorized access through the use of encryption and other security measures.</li>
+                                            <li>I, the owner of the bot and this website, will not access any user data unless it is absolutely neccessary for the bot to function or for me to debug an issue. I will not access any user data for any other reason.</li>
+                                                - Please note that some commands are meant to share data with other users, but you will always be notified and given the option to opt out.</li>
+                                        </ol>
+                                        <p>If you believe there to be an issue where the bot does not abide by this, please reach out to me at bleg3ndary@gmail.com.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    <!-- content-wrapper ends -->
+                    <!-- partial:partials/_footer.html -->
+                    <footer class="footer">
+                        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © _Leg3ndary 2022</span>
+                            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Thanks to <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrapdash.com</a> for this template.</span>
+                        </div>
+                    </footer>
+                    <!-- partial -->
+                </div>
+                <!-- main-panel ends -->
+            </div>
+            <!-- page-body-wrapper ends -->
+        </div>
+        <!-- container-scroller -->
+        <!-- plugins:js -->
+        <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+        <!-- endinject -->
+        <!-- Plugin js for this page -->
+        <script src="assets/vendors/chart.js/Chart.min.js"></script>
+        <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+        <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+        <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+        <!-- End plugin js for this page -->
+        <!-- inject:js -->
+        <script src="assets/js/off-canvas.js"></script>
+        <script src="assets/js/hoverable-collapse.js"></script>
+        <script src="assets/js/misc.js"></script>
+        <script src="assets/js/settings.js"></script>
+        <script src="assets/js/todolist.js"></script>
+        <!-- endinject -->
+        <!-- Custom js for this page -->
+        <script src="assets/js/status.js" type="module"></script>
+        <!-- End custom js for this page -->
+    </body>
+</html> 

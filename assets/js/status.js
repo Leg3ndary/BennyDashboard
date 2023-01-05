@@ -1,2 +1,5 @@
-// Make a fetch request
-fetch('https://api.github.com/users/Leg3ndary') 
+
+fetch("http://api.bennybot.me:8080/status.html")
+    .then(response => response.text())
+    .then(text => console.log(text));
+
